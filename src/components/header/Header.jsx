@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css"
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
               <a href="#contact">Contacto</a>
             </li>
             <li>
-              <a href="#contact">Contacto</a>
+              <button class="button-primary">Ingresar</button>
             </li>
           </ul>
         </div>
