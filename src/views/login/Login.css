@@ -2,6 +2,7 @@
     display: grid;
     place-items: center;
     height: 100vh;
+    padding: 1rem;
     background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
   }
   
@@ -18,6 +19,7 @@
     text-align: center;
     margin-bottom: 1.5rem;
     color: #333;
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
   }
   
   .login-form {
@@ -37,13 +39,14 @@
   }
   
   .input-group input {
-    width: 100%;
+    width: 94%; /* Ajuste dinámico */
     padding: 0.75rem;
     font-size: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #7c7777;
     border-radius: 8px;
     background-color: #fafafa;
     outline: none;
+    transition: border-color 0.3s ease;
   }
   
   .input-group input:focus {
@@ -52,50 +55,65 @@
   
   .login-button {
     padding: 0.75rem;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     background-color: #6a82fb;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
   }
   
   .back-button {
     margin-top: 10px;
     padding: 0.75rem;
-    font-size: 1rem;
-    background-color: #999e8f;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    background-color: #d76af8;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
   }
   
   .login-button:hover {
     background-color: #0d2b57;
   }
   
+  .back-button:hover {
+    background-color: #a244c4;
+  }
+  
   /* Responsividad */
   @media (max-width: 768px) {
     .login-card {
       padding: 1.5rem;
-      max-width: 90%;
+    }
+  
+    .input-group input {
+      padding: 0.7rem;
+    }
+  
+    .login-button,
+    .back-button {
+      padding: 0.7rem;
     }
   }
   
   @media (max-width: 480px) {
-    .login-title {
-      font-size: 1.5rem;
+    .login-card {
+      padding: 1rem;
     }
   
     .input-group input {
-      padding: 0.65rem;
+      padding: 0.5rem;
     }
   
-    .login-button {
-      padding: 0.65rem;
+    .login-button,
+    .back-button {
+      padding: 0.6rem;
     }
   }
   
