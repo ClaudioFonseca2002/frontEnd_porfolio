@@ -14,9 +14,9 @@ const Header = () => {
   return (
     <>
       <nav id="desktop-nav">
-        <div class="logo">Fonseca Claudio</div>
+        <div className="logo">Fonseca Claudio</div>
         <div>
-          <ul class="nav-links">
+          <ul className="nav-links">
             <li>
               <a href="#about">Sobre Mí</a>
             </li>
@@ -30,7 +30,7 @@ const Header = () => {
               <a href="#contact">Contacto</a>
             </li>
             <li>
-              <button class="button-primary">Ingresar</button>
+              <button className="button-primary">Ingresar</button>
             </li>
           </ul>
         </div>
@@ -57,6 +57,9 @@ const Header = () => {
             </li>
             <li>
               <a href="#contact">Contacto</a>
+            </li>
+            <li>
+              <button className="button-primary">Ingresar</button>
             </li>
           </ul>
         </div>
