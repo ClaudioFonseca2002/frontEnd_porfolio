@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import "../../../mediaqueries.css";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -29,9 +30,11 @@ const Header = () => {
             <li>
               <a href="#contact">Contacto</a>
             </li>
-            <li>
-              <button className="button-primary">Ingresar</button>
-            </li>
+            <Link to="/login">
+              <li>
+                <button className="button-primary">Ingresar</button>
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>
@@ -58,9 +61,11 @@ const Header = () => {
             <li>
               <a href="#contact">Contacto</a>
             </li>
-            <li>
-              <button className="button-primary">Ingresar</button>
-            </li>
+            <Link to="/login">
+              <li>
+                <button className="button-primary">Ingresar</button>
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>
